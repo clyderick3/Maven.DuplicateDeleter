@@ -24,7 +24,7 @@ public final class IntegerDuplicateDeleter extends DuplicateDeleter<Integer> {
 
     @Override
     public Integer[] removeDuplicatesExactly(int exactNumberOfDuplications) {
-//        return Arrays.stream(array)
-//                .filter(T -> getOccurence(T) != exactNumberOfDuplications).toArray(Integer[]::new);
+        return Arrays.stream(array)
+                .filter(T -> getOccurence(T) != exactNumberOfDuplications).toArray(Integer[]::new);
     }
 }
