@@ -14,10 +14,10 @@ public final class IntegerDuplicateDeleter extends DuplicateDeleter<Integer> {
     @Override
     public Integer[] removeDuplicates(int maxNumberOfDuplications) {
         return Arrays.stream(array)
-                .filter(number -> getOccurence(number) < maxNumberOfDuplications).toArray(Integer[]::new);
+                .filter(number -> getOccurrence(number) < maxNumberOfDuplications).toArray(Integer[]::new);
     }
 
-    private Long getOccurence(Integer number) {
+    private Long getOccurrence(Integer number) {
         return Arrays.stream(array)
                 .filter(newNumber -> newNumber.equals(number)).count();
     }
@@ -25,6 +25,6 @@ public final class IntegerDuplicateDeleter extends DuplicateDeleter<Integer> {
     @Override
     public Integer[] removeDuplicatesExactly(int exactNumberOfDuplications) {
         return Arrays.stream(array)
-                .filter(T -> getOccurence(T) != exactNumberOfDuplications).toArray(Integer[]::new);
+                .filter(T -> getOccurrence(T) != exactNumberOfDuplications).toArray(Integer[]::new);
     }
 }
