@@ -7,8 +7,8 @@ import java.util.Arrays;
  * @ATTENTION_TO_STUDENTS You are forbidden from modifying the signature of this class.
  */
 public final class StringDuplicateDeleter extends DuplicateDeleter<String> {
-//    public StringDuplicateDeleter(String[] intArray) {
-//        super(intArray);
+    public StringDuplicateDeleter(String[] intArray) {
+        super(intArray);
     }
 
     @Override
