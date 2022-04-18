@@ -13,8 +13,8 @@ public final class StringDuplicateDeleter extends DuplicateDeleter<String> {
 
     @Override
     public String[] removeDuplicates(int maxNumberOfDuplications) {
-//        return Arrays.stream(array)
-//                .filter(number -> getOccurence(number) < maxNumberOfDuplications).toArray(String[]::new);
+        return Arrays.stream(array)
+                .filter(number -> getOccurence(number) < maxNumberOfDuplications).toArray(String[]::new);
     }
 
     private Long getOccurence(String number) {
