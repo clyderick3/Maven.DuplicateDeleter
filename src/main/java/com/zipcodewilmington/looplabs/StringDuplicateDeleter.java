@@ -18,8 +18,8 @@ public final class StringDuplicateDeleter extends DuplicateDeleter<String> {
     }
 
     private Long getOccurence(String number) {
-//        return Arrays.stream(array)
-//                .filter(newNumber -> newNumber.equals(number)).count();
+        return Arrays.stream(array)
+                .filter(newNumber -> newNumber.equals(number)).count();
     }
 
     @Override
