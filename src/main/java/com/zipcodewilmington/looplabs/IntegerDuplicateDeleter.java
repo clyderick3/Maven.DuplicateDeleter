@@ -13,13 +13,13 @@ public final class IntegerDuplicateDeleter extends DuplicateDeleter<Integer> {
 
     @Override
     public Integer[] removeDuplicates(int maxNumberOfDuplications) {
-//        return Arrays.stream(array)
-//                .filter(number -> getOccurence(number) < maxNumberOfDuplications).toArray(Integer[]::new);
+        return Arrays.stream(array)
+                .filter(number -> getOccurence(number) < maxNumberOfDuplications).toArray(Integer[]::new);
     }
 
     private Long getOccurence(Integer number) {
-//        return Arrays.stream(array)
-//                .filter(newNumber -> newNumber.equals(number)).count();
+        return Arrays.stream(array)
+                .filter(newNumber -> newNumber.equals(number)).count();
     }
 
     @Override
